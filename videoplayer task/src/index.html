@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="RAJ DUTTA">
+        <meta name="keywords" content="HTML, CSS, JS, Webpack">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Videoplayer Task</title>
+    </head>
+
+    <body>
+        
+		<div id="video_wapper">
+			<div class="video_container">
+				<video width="100%" height="100%">
+					<source src="./Videos/video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="video_setting">
+			
+				<div id="play_button"></div>
+				<div class="pushed">
+				  <div class="one"></div>
+				  <div class="two"></div>
+				</div>
+				
+				<input type="range" id="seek" min="0" value="0">
+				<div class="volume">
+					<img src="./images/icons-1.png" id="volume-bottom" />
+					<div class="volumn-setting">
+						<input type="range" id="volumn-setting" step="1" min="0" max="100">
+					</div>
+				</div>
+				<img src="./images/full_screen.png" id="full-screen" />
+			</div>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,116 @@
+/** Basic Typography **/
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#play_button {
+	--width: 15px;
+    width: var(--width);
+    height: calc(var(--width) + 2px);
+    background-color: #fff;
+    clip-path: polygon(0% 0, 100% 50%, 0% 100%, 0 50%);
+    transform: scale(1);
+    cursor: pointer;
+    position: absolute;
+    left: 27px;
+    bottom: 26px;
+}
+
+/* stop bottom */
+.pushed {
+	width: 15px;
+    height: 17px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+    bottom: 26px;
+    left: 26px;
+	cursor: pointer;
+}
+
+.pushed .one {
+  width: 4.5px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.pushed .two {
+  width: 4.5px;
+  height: 100%;
+  background-color: #fff;
+}
+
+/** Basic Typography **/
+
+body > div#video_wapper {
+	width: 500px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+
+body > div#video_wapper > div.video_container {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body > div#video_wapper > div.video_setting {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	color: #fff;
+}
+
+body > div#video_wapper > div.video_setting > #seek {
+	width: var(--length);
+    bottom: 25px;
+    position: absolute;
+    left: 50px;
+}
+
+body > div#video_wapper > div.video_setting > .volume > #volume-bottom {
+    width: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 54px;
+    cursor: pointer;
+}
+
+body > div#video_wapper > div.video_setting > #full-screen {
+	width: 18px;
+    position: absolute;
+    bottom: 27px;
+    right: 25px;
+	cursor: pointer;
+}
+
+body > div#video_wapper > div.video_setting > .volume .volumn-setting {
+	display: none;
+}
+
+body > div#video_wapper > div.video_setting > .volume .volumn-setting #volumn-setting {
+	position: absolute;
+    width: 67px;
+    right: 35px;
+    bottom: 69px;
+    transform: rotate(270deg);
+}
